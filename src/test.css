@@ -1,0 +1,15 @@
+.hvrbox .hvrbox-layer_scale {
+	border-radius: 50%;
+	-moz-transform: scale(0);
+	-webkit-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+}
+.hvrbox:hover .hvrbox-layer_scale,
+.hvrbox.active .hvrbox-layer_scale {
+	border-radius: 0%;
+	-moz-transform: scale(1);
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
