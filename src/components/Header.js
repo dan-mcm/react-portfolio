@@ -29,7 +29,7 @@ class Header extends Component{
         <div>
           <Row gutter={8}>
             <Col span={6}><Image src={me} /></Col>
-            <Col span={18}><h1>(Portfolio) => Daniel McMahon</h1></Col>
+            <Col span={18}><h1>(Daniel McMahon) => Portfolio</h1></Col>
           </Row>
         </div>
       </Wrapper>

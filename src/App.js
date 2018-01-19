@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Banner from "./components/Banner";
 import SkillDisplay from "./components/SkillDisplay";
+import CustomCarousel from "./components/CustomCarousel"
 import Nav from "./components/Nav";
 import "./App.css";
 
@@ -57,6 +58,9 @@ class App extends Component {
           title='Other Skills'
           images={[sca, gad, gan, play]}
           />
+
+          <CustomCarousel />
+
         </Wrapper>
         <br />
         <br />
