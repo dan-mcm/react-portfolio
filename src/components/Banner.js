@@ -4,7 +4,8 @@ import Chart from './Chart';
 import { Col, Row } from "antd";
 
 const Outter = styled.div`
-  margin:100px;
+  margin-left:100px;
+  margin-right:100px;
 `
 
 const Wrapper = styled.div`
@@ -14,6 +15,7 @@ const Wrapper = styled.div`
   margin: auto;
   padding: 25px;
 `;
+
 const Title = styled.h3`
   color: white;
   padding: 20px;
@@ -38,7 +40,7 @@ class Banner extends Component{
             <Chart />
           </Col>
           <Col span={12}>
-            <Wrapper>
+            <Wrapper className='white'>
               <h3>Qualifications:</h3>
               <List>
                 <li>BA (hons) Music & Geography (2012)</li>

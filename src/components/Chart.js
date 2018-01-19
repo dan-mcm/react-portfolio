@@ -44,7 +44,7 @@ class Chart extends Component {
 
   render() {
     return (
-      <Border>
+      <Border className='white'>
         <Doughnut
           data={this.getChartData}
           options={{

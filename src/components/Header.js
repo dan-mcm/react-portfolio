@@ -2,23 +2,27 @@ import React, {Component} from 'react';
 import styled from 'styled-components';
 import { Col, Row } from "antd";
 import me from "../otherimages/DanHat.jpg";
+import background from "../otherimages/ep_naturalblack.png"
 
 const Image = styled.img`
   vertical-align: middle;
   height: 200px;
   width: 200px;
   border-radius: 200px;
-  border: 2px solid black;
+  border: 2px solid grey;
 `
 
 const Wrapper = styled.h1`
-  border-bottom: 2.5px solid black;
+  border-top: 2.5px solid grey;
+  border-bottom: 2.5px solid grey;
   padding:20px;
   background: rgba(255,255,255,0.8);
   vertical-align: middle;
   line-height: 100px;
   font-family: Open Sans;
   font-style: italic;
+  background-image:  url(${background});
+  color:white;
 `;
 
 class Header extends Component{

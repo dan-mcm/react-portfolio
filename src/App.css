@@ -1,10 +1,15 @@
 @import '~antd/dist/antd.css';
 
 body{
-    background-image: url("./otherimages/ep_naturalblack.png");
+    background-image: url("./otherimages/ep_naturalwhite.png");
+    background-color: darkblue;
     overflow-x:hidden;
 }
 
+h1{
+  color:white;
+  text-align: center
+}
 h2{
     color:white;
 }
@@ -16,12 +21,11 @@ h3{
 }
 
 footer{
-  margin-top:25px;
   border-top: 2.5px solid grey;
   background-color: #222;
   padding: 20px;
-  color: black;
-  background-image: url("./otherimages/ep_naturalwhite.png");
+  color: white;
+  background-image: url("./otherimages/ep_naturalblack.png");
 }
 
 footer img{
@@ -33,4 +37,8 @@ li{
 }
 .App {
   text-align: center;
+}
+
+.white {
+  background-image: url("./otherimages/ep_naturalwhite.png");
 }
