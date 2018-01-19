@@ -21,7 +21,6 @@ const Title = styled.h3`
   padding: 20px;
   margin-bottom: 25px;
   border-bottom: 2px solid darkred;
-  font-family: Open Sans;
   font-size: 200%;
 `;
 
@@ -54,10 +53,10 @@ class Banner extends Component{
               </h3>
               <br />
               <h3>
-                Check out my other website projects --><a href="#">
+                Check out my other project --><a href="#">
                   {" "}
                   Music Centre
-                </a>, <a href="#">Sienimiili</a>
+                </a>
               </h3>
               <br />
               <h3>

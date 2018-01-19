@@ -25,7 +25,6 @@ const Title = styled.h3`
   padding: 20px;
   margin-bottom: 25px;
   border-bottom: 2px solid darkred;
-  font-family: Open Sans;
   font-size: 200%;
 `;
 

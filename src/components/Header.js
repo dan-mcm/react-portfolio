@@ -13,14 +13,11 @@ const Image = styled.img`
 `
 
 const Wrapper = styled.h1`
-  border-top: 2.5px solid grey;
-  border-bottom: 2.5px solid grey;
+  border-bottom: 2.5px solid lightgrey;
   padding:20px;
   background: rgba(255,255,255,0.8);
   vertical-align: middle;
   line-height: 100px;
-  font-family: Open Sans;
-  font-style: italic;
   background-image:  url(${background});
   color:white;
 `;
@@ -32,7 +29,7 @@ class Header extends Component{
         <div>
           <Row gutter={8}>
             <Col span={6}><Image src={me} /></Col>
-            <Col span={18}><h1>Welcome to the Portfolio Site of Daniel McMahon</h1></Col>
+            <Col span={18}><h1>(Portfolio) => Daniel McMahon</h1></Col>
           </Row>
         </div>
       </Wrapper>
