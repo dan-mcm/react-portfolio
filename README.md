@@ -4,6 +4,6 @@ This project is a sample portfolio page designed using React (via Create-React-A
 
 WIP - To Do:
 - [x] Extract Web Dev/Prog Langs/Other Skills to components instead of repeating code.
-- [x] Overhaul design [WIP]
-- [ ] Compose Dockerfile to run application
-- [ ] Deploy to EC2 with Route53 domain configuration
+- [x] Overhaul design
+- [x] Deploy Website
+- [ ] Update with additional skills obtained
