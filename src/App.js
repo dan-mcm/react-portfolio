@@ -24,7 +24,7 @@ import sca from "./skills/scala.png";
 import play from "./skills/play.png";
 
 const Wrapper = styled.div`
-  width: 90%;
+  width: 80%;
   background-image:  url(${background});
   margin: auto;
   border: 2px solid grey;
@@ -34,7 +34,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Nav/>
         <Header />
 
         <br />
