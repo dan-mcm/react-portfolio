@@ -3,24 +3,14 @@ import styled from "styled-components";
 import { Flex, Box } from "grid-styled";
 
 const Wrapper = styled.div`
-  background-image: url("../images/otherimages/ep_naturalwhite.png");
   margin-top: 2em;
   margin-bottom: 2em;
   border: 2px solid grey;
 `;
 
-const Block = styled.div`
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 2.5px solid grey;
-  height: 300px;
-  width: 300px;
-  position: relative;
-  margin: auto;
-`;
-
 const Skill = styled.img`
-  max-width: 18em;
-  max-height: 18em;
+  max-width: 17em;
+  max-height: 17em;
   vertical-align: center;
   padding: 2em;
   margin-bottom: 2em;
@@ -35,10 +25,6 @@ const Title = styled.h3`
 `;
 
 class SkillDisplay extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <Wrapper className="black">

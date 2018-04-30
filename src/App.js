@@ -4,12 +4,9 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Banner from "./components/Banner";
 import SkillDisplay from "./components/SkillDisplay";
-import CustomCarousel from "./components/CustomCarousel";
-import Nav from "./components/Nav";
 import "./App.css";
 
 /* Image Imports */
-import background from "./images/otherimages/ep_naturalblack.png";
 import flk from "./images/skills/flask.png";
 import htmlcs from "./images/skills/htmlcssjs.png";
 import msp from "./images/skills/mysqlphp.png";
@@ -29,6 +26,7 @@ const Wrapper = styled.div`
   width: 80%;
   margin: auto;
 `;
+
 class App extends Component {
   render() {
     return (

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import Chart from "./Chart";
 import { Flex, Box } from "grid-styled";
 
 const Outter = styled.div`
