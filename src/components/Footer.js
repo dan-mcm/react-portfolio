@@ -1,51 +1,31 @@
-import React, {Component} from 'react';
-import gh from "../socialicons/gh.png";
-import li from "../socialicons/li.png";
+import React, { Component } from "react";
+import gh from "../images/socialicons/gh.png";
+import li from "../images/socialicons/li.png";
+import styled from "styled-components";
 
-class Footer extends Component{
-  render(){
+const Image = styled.img`
+  min-height: 3em;
+  min-width: 3em;
+`;
+
+const Text = styled.p`
+  font-size: 1em;
+`;
+
+class Footer extends Component {
+  render() {
     return (
       <footer>
-        <p>
+        <Text>
           <a href="https://www.linkedin.com/in/daniel-mcmahon-201a6b8a">
-            <img src={li} />
+            <Image src={li} />
           </a>&emsp; &copy; Daniel McMahon 2018 &emsp;<a href="https://github.com/daniel40392">
-            <img src={gh} />
+            <Image src={gh} />
           </a>
-        </p>
+        </Text>
       </footer>
-    )
+    );
   }
 }
 
 export default Footer;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<footer>
-  <p>
-    <a href="https://www.linkedin.com/in/daniel-mcmahon-201a6b8a">
-      <img src={li} />
-    </a>&emsp; &copy; Daniel McMahon 2018 &emsp;<a href="https://github.com/daniel40392">
-      <img src={gh} />
-    </a>
-  </p>
-</footer>

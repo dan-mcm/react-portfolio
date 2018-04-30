@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { Carousel } from "antd";
 import styled from "styled-components";
-import hip from "../codememes/joke-hip.jpg";
-import bugs from "../codememes/joke-99-bugs.jpg";
-import motto from "../codememes/joke-life-motto.jpg";
-import colon from "../codememes/joke-semi-colon.jpg";
+import hip from "../images/codememes/joke-hip.jpg";
+import bugs from "../images/codememes/joke-99-bugs.jpg";
+import motto from "../images/codememes/joke-life-motto.jpg";
+import colon from "../images/codememes/joke-semi-colon.jpg";
 
 const Wrapper = styled.div`
   margin-bottom: 50px;

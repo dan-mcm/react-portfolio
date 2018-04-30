@@ -1,42 +1,42 @@
-@import '~antd/dist/antd.css';
-@import url('https://fonts.googleapis.com/css?family=Cinzel');
+@import "~antd/dist/antd.css";
+@import url("https://fonts.googleapis.com/css?family=Cinzel");
 
-body{
-    background-image: url("./otherimages/ep_naturalwhite.png");
-    background-color: darkblue;
-    overflow-x:hidden;
+body {
+  background-image: url("./images/otherimages/swirl_pattern.png");
+  overflow-x: hidden;
 }
 
-h1{
-  color:white;
+h1 {
+  color: white;
   text-align: center;
-  font-family: 'Cinzel', cursive;
+  font-family: "Cinzel", cursive;
+  font-size: 2em;
 }
 
-h2{
-    color:white;
+h2 {
+  color: white;
 }
 
-h3{
-    font-weight:bold;
-    color:darkred;
-    font-size:large;
-    font-family: 'Cinzel', cursive;
+h3 {
+  font-weight: bold;
+  color: darkred;
+  font-size: large;
+  font-family: "Cinzel", cursive;
 }
 
-footer{
+footer {
   border-top: 2.5px solid lightgrey;
   background-color: #222;
   padding: 20px;
   color: white;
-  background-image: url("./otherimages/ep_naturalblack.png");
+  background-image: url("./images/otherimages/ep_naturalblack.png");
 }
 
-footer img{
-    width:25px;
+footer img {
+  width: 25px;
 }
 
-li{
+li {
   text-decoration: none;
 }
 .App {
@@ -44,7 +44,11 @@ li{
 }
 
 .white {
-  background-image: url("./otherimages/ep_naturalwhite.png");
+  background-image: url("./images/otherimages/ep_naturalwhite.png");
+}
+
+.black {
+  background-image: url("./images/otherimages/ep_naturalblack.png");
 }
 
 /* for AntD Carousel */
@@ -59,7 +63,7 @@ li{
   color: #fff;
 }
 
-.ant-carousel img{
-  margin:auto;
-  display:block;
+.ant-carousel img {
+  margin: auto;
+  display: block;
 }

@@ -3,8 +3,6 @@ import { Bar, Line, Pie, Doughnut } from "react-chartjs-2";
 import styled from "styled-components";
 
 const Border = styled.div`
-  width: 80%;
-  margin: auto;
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.8);
   border: 2.5px solid grey;
@@ -44,7 +42,7 @@ class Chart extends Component {
 
   render() {
     return (
-      <Border className='white'>
+      <Border className="white">
         <Doughnut
           data={this.getChartData}
           options={{
@@ -56,7 +54,7 @@ class Chart extends Component {
             },
             legend: {
               display: true,
-              position: "right",
+              position: "right"
             }
           }}
         />
