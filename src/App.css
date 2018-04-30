@@ -51,6 +51,44 @@ li {
   background-image: url("./images/otherimages/ep_naturalblack.png");
 }
 
+/* card flip transformation - needs development if to be used */
+
+.flip-container {
+  position: relative;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+}
+
+.flip-cards {
+  width: 200px;
+  height: 291px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.flip-cards:hover {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+
+.flip-cards div {
+  position: absolute;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.front-card {
+  z-index: 2;
+  background-image: url("./images/otherimages/ep_naturalblack.png");
+}
+
+.reverse-card {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
 /* for AntD Carousel */
 .ant-carousel .slick-slide {
   text-align: center;

@@ -44,6 +44,21 @@ class SkillDisplay extends Component {
           <Box px={2} py={1} width={[1, 1 / 2, 1 / 4]}>
             <Skill src={this.props.images[3]} className="white" />
           </Box>
+          {/* option to flip cards - css needs tuning...
+          <Box px={2} py={1} width={[1, 1 / 2, 1 / 4]}>
+            <div className="flip-container">
+              <div className="flip-cards">
+                <div className="front-card">
+                  <p>Sample Card Animation</p>
+                  <Skill src={this.props.images[0]} className="white" />
+                </div>
+                <div className="reverse-card">
+                  <p>FLIPPED!</p>
+                  <Skill src={this.props.images[0]} className="white" />
+                </div>
+              </div>
+            </div>
+          </Box>*/}
         </Flex>
       </Wrapper>
     );

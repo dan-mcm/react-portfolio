@@ -4,6 +4,8 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Banner from "./components/Banner";
 import SkillDisplay from "./components/SkillDisplay";
+import { Card } from "antd";
+
 import "./App.css";
 
 /* Image Imports */
@@ -26,6 +28,11 @@ const Wrapper = styled.div`
   width: 80%;
   margin: auto;
 `;
+
+const gridStyle = {
+  width: "25%",
+  textAlign: "center"
+};
 
 class App extends Component {
   render() {
@@ -52,8 +59,6 @@ class App extends Component {
 
           <SkillDisplay title="Other Skills" images={[sca, gad, gan, play]} />
         </Wrapper>
-        <br />
-        <br />
         <br />
 
         <Footer />

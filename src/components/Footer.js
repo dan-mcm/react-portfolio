@@ -9,20 +9,20 @@ const Image = styled.img`
 `;
 
 const Text = styled.p`
-  font-size: 1em;
+  font-size: 5em;
 `;
 
 class Footer extends Component {
   render() {
     return (
       <footer>
-        <Text>
+        <p>
           <a href="https://www.linkedin.com/in/daniel-mcmahon-201a6b8a">
             <Image src={li} />
           </a>&emsp; &copy; Daniel McMahon 2018 &emsp;<a href="https://github.com/daniel40392">
             <Image src={gh} />
           </a>
-        </Text>
+        </p>
       </footer>
     );
   }
