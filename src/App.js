@@ -23,9 +23,9 @@ class App extends Component {
         <Router>
           <div>
             <Nav />
-            <Route exact path="/" component={Home} />
-            <Route exact path="/projects" component={Projects} />
-            <Route exact path="/contact" component={Contact} />
+            <Route exact path="/ReactAntd/" component={Home} />
+            <Route exact path="/ReactAntd/projects" component={Projects} />
+            <Route exact path="/ReactAntd/contact" component={Contact} />
           </div>
         </Router>
         <Footer />

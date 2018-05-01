@@ -32,17 +32,26 @@ const NavBar = () => (
   <Navigation className="black">
     <ul>
       <li>
-        <Link to="/" style={{ color: "white", textDecoration: "none" }}>
+        <Link
+          to="/ReactAntd/"
+          style={{ color: "white", textDecoration: "none" }}
+        >
           Home
         </Link>
       </li>
       <li>
-        <Link to="/projects" style={{ color: "white", textDecoration: "none" }}>
+        <Link
+          to="/ReactAntd/projects"
+          style={{ color: "white", textDecoration: "none" }}
+        >
           Projects
         </Link>
       </li>
       <li>
-        <Link to="/contact" style={{ color: "white", textDecoration: "none" }}>
+        <Link
+          to="/ReactAntd/contact"
+          style={{ color: "white", textDecoration: "none" }}
+        >
           Contact
         </Link>
       </li>
