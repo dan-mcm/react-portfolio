@@ -2,65 +2,32 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Banner from "./components/Banner";
-import SkillDisplay from "./components/SkillDisplay";
-import { Card } from "antd";
+import Nav from "./components/Nav";
+import Home from "./containers/Home";
+import Projects from "./containers/Projects";
+import Contact from "./containers/Contact";
+import {
+  BrowserRouter as Router,
+  Route,
+  Redirect,
+  Link
+} from "react-router-dom";
 
 import "./App.css";
-
-/* Image Imports */
-import flk from "./images/skills/flask.png";
-import htmlcs from "./images/skills/htmlcssjs.png";
-import msp from "./images/skills/mysqlphp.png";
-import re from "./images/skills/react.png";
-import py from "./images/skills/python.png";
-import ja from "./images/skills/java.png";
-import ba from "./images/skills/bash.png";
-import p3 from "./images/skills/processing.png";
-import gan from "./images/skills/googleanalytics.png";
-import gad from "./images/skills/googleadwords.png";
-import sca from "./images/skills/scala.png";
-import play from "./images/skills/play.png";
-
-//  background-image: url(${background});
-
-const Wrapper = styled.div`
-  width: 80%;
-  margin: auto;
-`;
-
-const gridStyle = {
-  width: "25%",
-  textAlign: "center"
-};
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Header />
-
-        <br />
-        <br />
-        <br />
-
-        <Wrapper>
-          <Banner />
-
-          <SkillDisplay
-            title="Web Development"
-            images={[flk, htmlcs, msp, re]}
-          />
-
-          <SkillDisplay
-            title="Programming Languages"
-            images={[py, ja, ba, p3]}
-          />
-
-          <SkillDisplay title="Other Skills" images={[sca, gad, gan, play]} />
-        </Wrapper>
-        <br />
-
+        <Router>
+          <div>
+            <Nav />
+            <Route exact path="/" component={Home} />
+            <Route exact path="/projects" component={Projects} />
+            <Route exact path="/contact" component={Contact} />
+          </div>
+        </Router>
         <Footer />
       </div>
     );

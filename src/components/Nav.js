@@ -1,45 +1,53 @@
-import React, { Component } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { Layout, Menu, Breadcrumb } from "antd";
+import navImage from "../images/otherimages/ep_naturalwhite.png";
 
-const { Header, Content, Footer } = Layout;
-
-const NoBullets = styled.ul`
-  list-style-type: none;
-  float:left;
-  margin: 0;
-  padding: 0;
-  color: grey;
-`
-
-const CustomList = styled.li`
-  display: inline;
-  color: black;
-  padding: 25px;
-  border: 2px solid grey;
-  text-align: center;
-  vertical-align: center;
-`
-class Nav extends Component {
-  render() {
-    return (
-      <div>
-        <Header>
-          <Menu
-            theme="dark"
-            mode="horizontal"
-            defaultSelectedKeys={["1"]}
-            style={{ lineHeight: "64px" }}
-          >
-            <Menu.Item key="1">Home</Menu.Item>
-            <Menu.Item key="2">Skills</Menu.Item>
-            <Menu.Item key="3">Updates</Menu.Item>
-            <Menu.Item key="4">Side Projects</Menu.Item>
-          </Menu>
-        </Header>
-      </div>
-    );
+const Navigation = styled.div`
+  background-color: black;
+  color: white;
+  font-size: 1em;
+  border-top: 0.1em solid darkgrey;
+  border-bottom: 0.1em solid darkgrey;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding: 2em;
   }
-}
+  li {
+    display: inline;
+    padding: 1em;
+    text-decoration: none;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  li:hover {
+    background-image: url(${navImage});
+    color: black;
+  }
+`;
 
-export default Nav;
+const NavBar = () => (
+  <Navigation className="black">
+    <ul>
+      <li>
+        <Link to="/" style={{ color: "white", textDecoration: "none" }}>
+          Home
+        </Link>
+      </li>
+      <li>
+        <Link to="/projects" style={{ color: "white", textDecoration: "none" }}>
+          Projects
+        </Link>
+      </li>
+      <li>
+        <Link to="/contact" style={{ color: "white", textDecoration: "none" }}>
+          Contact
+        </Link>
+      </li>
+    </ul>
+  </Navigation>
+);
+
+export default NavBar;

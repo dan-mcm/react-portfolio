@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Flex, Box } from "grid-styled";
 import me from "../images/otherimages/DanHat.jpg";
 import background from "../images/otherimages/ep_naturalblack.png";
+import Nav from "./Nav";
 
 const Image = styled.img`
   vertical-align: middle;
@@ -13,8 +14,7 @@ const Image = styled.img`
 `;
 
 const Wrapper = styled.h1`
-  border-bottom: 2.5px solid lightgrey;
-  padding: 20px;
+  padding: 1em;
   background: rgba(255, 255, 255, 0.8);
   vertical-align: middle;
   line-height: 100px;

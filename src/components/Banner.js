@@ -42,7 +42,9 @@ class Banner extends Component {
               <h3>Qualifications:</h3>
               <List>
                 <li>BA (hons) Music & Geography (2012)</li>
+                <br />
                 <li>Professional Diploma in Education (2013)</li>
+                <br />
                 <li>Higher Diploma in Computer Science (2017)</li>
               </List>
               <br />
