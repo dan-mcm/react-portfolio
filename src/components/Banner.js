@@ -40,7 +40,10 @@ const Image = styled.img`
   border-radius: 5em;
   padding: 5px;
   border: 2px solid black;
-
+  cursor: pointer;
+  :hover{
+    background-color: rgba(0, 0, 0, 0.2);
+  }
 `;
 
 class Banner extends Component {
