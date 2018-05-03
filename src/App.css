@@ -1,6 +1,21 @@
 @import "~antd/dist/antd.css";
 @import url("https://fonts.googleapis.com/css?family=Cinzel");
 
+@media only screen and (max-width: 799px) {
+    .hidechart {
+        display: none;
+    }
+}
+
+.hidechart{
+  background-image: url("./images/otherimages/ep_naturalwhite.png");
+  max-width: 900px;
+}
+
+.recharts-wrapper{
+  margin: auto;
+}
+
 body {
   background-image: url("./images/otherimages/swirl_pattern.png");
   overflow-x: hidden;

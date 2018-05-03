@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { Flex, Box } from "grid-styled";
 
+import Chart from "./Chart";
+
 import diploma from "../images/homepage/diploma.png";
 import git from "../images/homepage/github.png";
 import mail from "../images/homepage/mail.png";
@@ -19,12 +21,19 @@ const Wrapper = styled.div`
   padding: 1em;
 `;
 
-const Title = styled.h3`
+const Title = styled.h1`
   color: white;
   padding: 20px;
   margin-bottom: 25px;
   border-bottom: 2px solid darkred;
   font-size: 200%;
+`;
+
+const SubTitle = styled.h3`
+  color: darkred;
+  border-bottom: 0.05em solid black;
+  margin-bottom: 1em;
+  font-size: 150%;
 `;
 
 const List = styled.ul`
@@ -56,7 +65,7 @@ class Banner extends Component {
           </Box>
           <Box px={2} py={2} width={[1, 1/3]}>
             <Wrapper className="white">
-              <h3>Contact</h3>
+              <SubTitle>Contact</SubTitle>
               <Image src={mail}/>
               <br /><br />
               <a href="mailto:daniel40392@gmail.com">daniel40392@gmail.com</a>
@@ -64,7 +73,7 @@ class Banner extends Component {
           </Box>
           <Box px={2} py={2} width={[1, 1/3]}>
             <Wrapper className="white">
-              <h3>Qualifications</h3>
+              <SubTitle>Qualifications</SubTitle>
               <Image src={diploma}/>
               <br /><br />
               <List>
@@ -78,10 +87,15 @@ class Banner extends Component {
           </Box>
           <Box px={2} py={2} width={[1, 1/3]}>
             <Wrapper className="white">
-              <h3>Github</h3>
+              <SubTitle>Github</SubTitle>
               <Image src={git}/>
               <br /><br />
               <a href="https://github.com/daniel40392">GitHub</a>
+            </Wrapper>
+          </Box>
+          <Box px={2} py={4} width={1}>
+            <Wrapper className="hidechart">
+              <Chart/>
             </Wrapper>
           </Box>
         </Flex>
