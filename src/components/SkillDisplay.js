@@ -14,6 +14,7 @@ const Skill = styled.img`
   vertical-align: center;
   padding: 2em;
   margin-bottom: 2em;
+  border: 2px solid grey;
 `;
 
 const Title = styled.h3`

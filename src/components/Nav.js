@@ -7,8 +7,8 @@ const Navigation = styled.div`
   background-color: black;
   color: white;
   font-size: 1em;
-  border-top: 0.1em solid darkgrey;
-  border-bottom: 0.1em solid darkgrey;
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
   ul {
     list-style-type: none;
     margin: 0;

@@ -8,10 +8,6 @@ const Image = styled.img`
   min-width: 3em;
 `;
 
-const Text = styled.p`
-  font-size: 5em;
-`;
-
 class Footer extends Component {
   render() {
     return (

@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { Flex, Box } from "grid-styled";
 import me from "../images/otherimages/DanHat.jpg";
 import background from "../images/otherimages/ep_naturalblack.png";
-import Nav from "./Nav";
 
 const Image = styled.img`
   vertical-align: middle;

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Flex, Box } from "grid-styled";
 import styled from "styled-components";
 import Banner from "../components/Banner";
 import SkillDisplay from "../components/SkillDisplay";

@@ -1,10 +1,14 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import { Flex, Box } from "grid-styled";
 
 const Structure = styled.div`
   min-height: 400px;
-  margin: 1em;
+  max-height: 400px;
+  margin: auto;
+  padding: 1em;
+  text-align: center;
+  border: 2px solid grey;
+  margin-bottom: 0.5em;
 `;
 
 const CardTitle = styled.h1`
@@ -17,8 +21,20 @@ class Card extends Component {
     return (
       <Structure className="white">
         <CardTitle>{this.props.title}</CardTitle>
-        <p>Lorem Ipsum Dulce Et Decorum Est</p>
-      </Structure>
+          <br/>
+          {
+            this.props.project ? <div><a href={this.props.project}>Access Project</a><br/><br/></div> : null
+          }
+
+          {
+            this.props.code ? <div><a href={this.props.project}>Access Code</a><br/><br/></div> : null
+          }
+          <br/><br/>
+          {
+            this.props.img ? <div><img src={this.props.img} alt={this.props.img}/><br/><br/></div> : null
+          }
+          <br/>
+        </Structure>
     );
   }
 }
