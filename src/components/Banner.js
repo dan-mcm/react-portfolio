@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { Flex, Box } from "grid-styled";
 
+import diploma from "../images/homepage/diploma.png";
+import git from "../images/homepage/github.png";
+import mail from "../images/homepage/mail.png";
+
 const Outter = styled.div`
   border: 2px solid grey;
   padding-bottom: 2em;
@@ -29,6 +33,16 @@ const List = styled.ul`
   padding: 0;
 `;
 
+const Image = styled.img`
+  vertical-align: middle;
+  height: 5em;
+  width: 5em;
+  border-radius: 5em;
+  padding: 5px;
+  border: 2px solid black;
+
+`;
+
 class Banner extends Component {
   render() {
     return (
@@ -37,9 +51,19 @@ class Banner extends Component {
           <Box px={2} py={1} width={1}>
             <Title>At A Glance</Title>
           </Box>
-          <Box px={20} py={1} width={[1]}>
+          <Box px={2} py={2} width={[1, 1/3]}>
             <Wrapper className="white">
-              <h3>Qualifications:</h3>
+              <h3>Contact</h3>
+              <Image src={mail}/>
+              <br /><br />
+              <a href="mailto:daniel40392@gmail.com">daniel40392@gmail.com</a>
+            </Wrapper>
+          </Box>
+          <Box px={2} py={2} width={[1, 1/3]}>
+            <Wrapper className="white">
+              <h3>Qualifications</h3>
+              <Image src={diploma}/>
+              <br /><br />
               <List>
                 <li>BA (hons) Music & Geography (2012)</li>
                 <br />
@@ -47,21 +71,14 @@ class Banner extends Component {
                 <br />
                 <li>Higher Diploma in Computer Science (2017)</li>
               </List>
-              <br />
-              <h3>
-                Check out my code <br />
-                <a href="https://github.com/daniel40392">GitHub</a>
-              </h3>
-              <br />
-              <h3>
-                Check out my other project <br />
-                <a href="#"> Music Centre</a>
-              </h3>
-              <br />
-              <h3>
-                Contact at <br />
-                <a href="mailto:daniel40392@gmail.com">daniel40392@gmail.com</a>
-              </h3>
+            </Wrapper>
+          </Box>
+          <Box px={2} py={2} width={[1, 1/3]}>
+            <Wrapper className="white">
+              <h3>Github</h3>
+              <Image src={git}/>
+              <br /><br />
+              <a href="https://github.com/daniel40392">GitHub</a>
             </Wrapper>
           </Box>
         </Flex>
