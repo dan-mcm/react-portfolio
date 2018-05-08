@@ -12,18 +12,25 @@ const Image = styled.img`
   border: 2px solid grey;
 `;
 
+const OutterWrapper = styled.div`
+  background-image: url(${background});
+`;
+
 const Wrapper = styled.h1`
-  padding: 1em;
-  background: rgba(255, 255, 255, 0.8);
+  padding-top: 1em;
+  padding-bottom: 1em;
   vertical-align: middle;
   line-height: 100px;
-  background-image: url(${background});
+
   color: white;
+  max-width: 80%;
+  margin: auto;
 `;
 
 class Header extends Component {
   render() {
     return (
+      <OutterWrapper>
       <Wrapper>
         <Flex flexWrap="wrap" className="bold">
           <Box px={2} py={1} width={[1, 1 / 4]}>
@@ -34,6 +41,7 @@ class Header extends Component {
           </Box>
         </Flex>
       </Wrapper>
+      </OutterWrapper>
     );
   }
 }
