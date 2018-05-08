@@ -25,6 +25,18 @@ const Title = styled.h3`
   font-size: 200%;
 `;
 
+const Card = styled.div`
+  background-color:white;
+  color: black;
+  max-width: 17em;
+  max-height: 17em;
+  min-width: 17em;
+  min-height: 17em;
+  h3{
+    border-bottom: 1px solid black;
+  }
+`
+
 class SkillDisplay extends Component {
   render() {
     return (
@@ -36,25 +48,21 @@ class SkillDisplay extends Component {
           {this.props.images.map(image => {
             return (
               <Box px={2} py={1} width={[1, 1 / 2, 1 / 4]}>
-                <Skill src={image} className="white" />
+              <div className="flip-container">
+                <div className="flipper">
+                  <div className="front">
+                    <Skill src={image} className="white" />
+                  </div>
+                  <div className="back">
+                    <Card><h3>Flipped!</h3>
+                    <p>Text About this Skill Here!</p></Card>
+                  </div>
+                </div>
+              </div>
+
               </Box>
             );
           })}
-          {/* option to flip cards - css needs tuning...
-          <Box px={2} py={1} width={[1, 1 / 2, 1 / 4]}>
-            <div className="flip-container">
-              <div className="flip-cards">
-                <div className="front-card">
-                  <p>Sample Card Animation</p>
-                  <Skill src={this.props.images[0]} className="white" />
-                </div>
-                <div className="reverse-card">
-                  <p>FLIPPED!</p>
-                  <Skill src={this.props.images[0]} className="white" />
-                </div>
-              </div>
-            </div>
-          </Box>*/}
         </Flex>
       </Wrapper>
     );
