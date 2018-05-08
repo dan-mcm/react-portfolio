@@ -77,11 +77,11 @@ class Banner extends Component {
               <Image src={diploma}/>
               <br /><br />
               <List>
-                <li>BA (hons) Music & Geography (2012)</li>
+                <li>Higher Diploma in Computer Science (2017)</li>
                 <br />
                 <li>Professional Diploma in Education (2013)</li>
                 <br />
-                <li>Higher Diploma in Computer Science (2017)</li>
+                <li>BA (hons) Music & Geography (2012)</li>
               </List>
             </Wrapper>
           </Box>

@@ -33,18 +33,13 @@ class SkillDisplay extends Component {
           <Box px={2} py={1} width={1}>
             {this.props.title ? <Title>{this.props.title}</Title> : null}
           </Box>
-          <Box px={2} py={1} width={[1, 1 / 2, 1 / 4]}>
-            <Skill src={this.props.images[0]} className="white" />
-          </Box>
-          <Box px={2} py={1} width={[1, 1 / 2, 1 / 4]}>
-            <Skill src={this.props.images[1]} className="white" />
-          </Box>
-          <Box px={2} py={1} width={[1, 1 / 2, 1 / 4]}>
-            <Skill src={this.props.images[2]} className="white" />
-          </Box>
-          <Box px={2} py={1} width={[1, 1 / 2, 1 / 4]}>
-            <Skill src={this.props.images[3]} className="white" />
-          </Box>
+          {this.props.images.map(image => {
+            return (
+              <Box px={2} py={1} width={[1, 1 / 2, 1 / 4]}>
+                <Skill src={image} className="white" />
+              </Box>
+            );
+          })}
           {/* option to flip cards - css needs tuning...
           <Box px={2} py={1} width={[1, 1 / 2, 1 / 4]}>
             <div className="flip-container">
