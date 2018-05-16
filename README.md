@@ -18,13 +18,14 @@ Using Code Styling:
 
 Linting:
 - ESLINT (Coming Soon)
-- XO (Coming Soon)
 
 Tests:
 - Jest (Coming Soon)
 
 Continuously Integrated:
+- XO (Coming Soon)
 - Circle CI (Coming Soon)
+
 
 ## Running Locally
 
