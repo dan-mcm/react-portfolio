@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import hoverImage from "../images/otherimages/ep_naturalblack.png";
 
-
 const Structure = styled.div`
   min-height: 400px;
   max-height: 400px;

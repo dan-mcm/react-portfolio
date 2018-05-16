@@ -24,6 +24,9 @@ const Wrapper = styled.div`
   border: 2px solid grey;
 `;
 
+const Linkage = styled.a`
+  color: darkred;
+`
 class Publications extends Component {
   render() {
     return (
@@ -39,15 +42,15 @@ class Publications extends Component {
                 <Wrapper className="white">
                   <SubTitle>DEV.TO</SubTitle>
                   <br />
-                  <a href="https://dev.to/daniel40392/leveling-up-from-create-react-app-to-express--some-neat-styling-libraries-130p">
+                  <Linkage href="https://dev.to/daniel40392/leveling-up-from-create-react-app-to-express--some-neat-styling-libraries-130p">
                     Leveling Up: From Create-React-App to Express (& some neat
                     styling libraries)
-                  </a>
+                  </Linkage>
                   <br />
                   <br />
-                  <a href="https://dev.to/daniel40392/visualizing-fibonacci-for-the-music-lover-in-you-2609">
+                  <Linkage href="https://dev.to/daniel40392/visualizing-fibonacci-for-the-music-lover-in-you-2609">
                     Visualizing Fibonacci: For the Music Lover in You!
-                  </a>
+                  </Linkage>
                   <br />
                   <br />
                 </Wrapper>
