@@ -26,5 +26,5 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "http://daniel40392.github.io/ReactAntd"
+  "homepage": "http://daniel40392.github.io/react-portfolio"
 }

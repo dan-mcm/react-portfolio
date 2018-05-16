@@ -58,19 +58,19 @@ const NavBar = () => (
   <Navigation className="black">
     <Flex flexWrap="wrap">
       <Boxage px={2} py={3} width={[1, 1 / 5]}>
-        <Linkage to="/ReactAntd/">Home</Linkage>
+        <Linkage to="/react-portfolio/">Home</Linkage>
       </Boxage>
       <Boxage px={2} py={3} width={[1, 1 / 5]}>
-        <Linkage to="/ReactAntd/about">About</Linkage>
+        <Linkage to="/react-portfolio/about">About</Linkage>
       </Boxage>
       <Boxage px={2} py={3} width={[1, 1 / 5]}>
-        <Linkage to="/ReactAntd/projects">Projects</Linkage>
+        <Linkage to="/react-portfolio/projects">Projects</Linkage>
       </Boxage>
       <Boxage px={2} py={3} width={[1, 1 / 5]}>
-        <Linkage to="/ReactAntd/publications">Publications</Linkage>
+        <Linkage to="/react-portfolio/publications">Publications</Linkage>
       </Boxage>
       <Boxage px={2} py={3} width={[1, 1 / 5]}>
-        <Linkage to="/ReactAntd/contact">Contact</Linkage>
+        <Linkage to="/react-portfolio/contact">Contact</Linkage>
       </Boxage>
     </Flex>
   </Navigation>

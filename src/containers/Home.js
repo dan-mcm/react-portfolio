@@ -5,7 +5,6 @@ import SkillDisplay from "../components/SkillDisplay";
 
 /* Image Imports */
 
-
 import htmlcssjs from "../images/skills/frontend/htmlcssjs.png";
 import bootstrap from "../images/skills/frontend/bootstrap.png";
 import react from "../images/skills/frontend/react.png";
@@ -21,10 +20,10 @@ import golang from "../images/skills/backend/golang.png";
 import java from "../images/skills/backend/java.png";
 import scala from "../images/skills/backend/scala.png";
 
-import play from  "../images/skills/backend/play.png";
-import express from  "../images/skills/backend/express.png";
-import mysqlphp from  "../images/skills/backend/mysqlphp.png";
-import redis from  "../images/skills/backend/redis.png";
+import play from "../images/skills/backend/play.png";
+import express from "../images/skills/backend/express.png";
+import mysqlphp from "../images/skills/backend/mysqlphp.png";
+import redis from "../images/skills/backend/redis.png";
 
 import bash from "../images/skills/devops/bash.png";
 import docker from "../images/skills/devops/docker.png";
@@ -47,10 +46,48 @@ class Home extends Component {
       <Wrapper>
         <br />
         <Banner />
-        <SkillDisplay title="DevOps" images={[bash, docker, k8, git]} />
-        <SkillDisplay title="Frontend" images={[bootstrap, flask, react, redux, htmlcssjs, npm, yarn, node]} />
-        <SkillDisplay title="Backend" images={[python, golang, java, scala, play, express, mysqlphp, redis]} />
-        <SkillDisplay title="Other" images={[processing, adwords, analytics, seo]} />
+
+        <SkillDisplay
+          title="DevOps"
+          items={[
+            { image: bash, subtitle: "Bash", text: "I can do bash me" },
+            { image: docker, subtitle: "Docker", text: "I can do docker me" },
+            { image: k8, subtitle: "Kubernetes", text: "I can kubernetes me" },
+            { image: git, subtitle: "Git", text: "I can do git me" }
+          ]}
+        />
+
+        <SkillDisplay
+          title="Frontend"
+          items={[{ image: bootstrap, subtitle: "Bootstrap", text: "I can do Bootstrap me" },
+           { image: flask, subtitle: "Flask", text: "I can do Flask me" },
+           { image: react, subtitle: "React", text: "I can do React me" },
+            { image: redux, subtitle: "Redux", text: "I can do Redux me" },
+            { image: htmlcssjs, subtitle: "HTML/CSS/JS", text: "I can do WebDev me" },
+            { image: npm, subtitle: "Node Package Manager", text: "I can do node management me" },
+            { image: yarn, subtitle: "Yarn", text: "I can do Yarn Package Management me" },
+            { image: node, subtitle: "Node", text: "I can do a Node me" }]}
+        />
+
+        <SkillDisplay
+          title="Backend"
+          items={[{ image: python, subtitle: "Python", text: "I can do a Python me" },
+          { image: golang, subtitle: "Go", text: "I can go go go" },
+          { image: java, subtitle: "Java", text: "I can haz java" },
+          { image: scala, subtitle: "Scala", text: "I can Scala" },
+          { image: play, subtitle: "Play", text: "I can play" },
+          { image: express, subtitle: "Express", text: "I can do an express" },
+          { image: mysqlphp, subtitle: "MySQL/PHP", text: "I can do MySQL & PHP" },
+          { image: redis, subtitle: "Redis", text: "I can do session mgmt me" }]}
+        />
+
+        <SkillDisplay
+          title="Other"
+          items={[{ image: processing, subtitle: "Processing", text: "I can process" },
+          { image: adwords, subtitle: "Google AdWords", text: "I can add words" },
+          { image: analytics, subtitle: "Google Analytics", text: "I can analytic" },
+          { image: seo, subtitle: "Search Engine Optimization", text: "I can optimize" }]}
+        />
         <br />
       </Wrapper>
     );

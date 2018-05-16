@@ -22,11 +22,11 @@ class App extends Component {
         <Router>
           <div>
             <Nav />
-            <Route exact path="/ReactAntd/" component={Home} />
-            <Route exact path="/ReactAntd/about" component={About} />
-            <Route exact path="/ReactAntd/projects" component={Projects} />
-            <Route exact path="/ReactAntd/publications" component={Publications} />
-            <Route exact path="/ReactAntd/contact" component={Contact} />
+            <Route exact path="/react-portfolio/" component={Home} />
+            <Route exact path="/react-portfolio/about" component={About} />
+            <Route exact path="/react-portfolio/projects" component={Projects} />
+            <Route exact path="/react-portfolio/publications" component={Publications} />
+            <Route exact path="/react-portfolio/contact" component={Contact} />
           </div>
         </Router>
         <Footer />

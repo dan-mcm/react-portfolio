@@ -45,17 +45,17 @@ class SkillDisplay extends Component {
           <Box px={2} py={1} width={1}>
             {this.props.title ? <Title>{this.props.title}</Title> : null}
           </Box>
-          {this.props.images.map(image => {
+          {this.props.items.map(item => {
             return (
               <Box px={2} py={1} width={[1, 1 / 2, 1 / 4]}>
               <div className="flip-container">
                 <div className="flipper">
                   <div className="front">
-                    <Skill src={image} className="white" />
+                    <Skill src={item.image} className="white" />
                   </div>
                   <div className="back">
-                    <Card><h3>Flipped!</h3>
-                    <p>Text About this Skill Here!</p></Card>
+                    <Card><h3>{item.subtitle}</h3>
+                    <p>{item.text}</p></Card>
                   </div>
                 </div>
               </div>
