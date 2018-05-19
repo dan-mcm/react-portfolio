@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import Banner from "../components/Banner";
+import ChartComponent from "../components/ChartComponent";
 import SkillDisplay from "../components/SkillDisplay";
 
 /* Image Imports */
@@ -46,6 +47,10 @@ class Home extends Component {
       <Wrapper>
         <br />
         <Banner />
+
+        <div className="hidechart">
+          <ChartComponent />
+        </div>
 
         <SkillDisplay
           title="DevOps"

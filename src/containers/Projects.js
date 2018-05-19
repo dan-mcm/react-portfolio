@@ -171,6 +171,8 @@ class Projects extends Component {
                   images={[python, jupyter]}
                 />
               </Box>
+              <br />
+              <br />
             </Flex>
           </div>
         </Wrapper>

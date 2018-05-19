@@ -1,15 +1,25 @@
 import React, { Component } from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import hoverImage from "../images/otherimages/ep_naturalblack.png";
 
+const rotate360 = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+`;
+
 const Structure = styled.div`
-  min-height: 400px;
-  max-height: 400px;
+  min-height: 500px;
   margin: auto;
-  padding: 1em;
+  padding: 2em;
+  margin: 1em;
+  margin-bottom: 2em;
   text-align: center;
   border: 2px solid grey;
-  margin-bottom: 0.5em;
 `;
 
 const CardTitle = styled.h1`
@@ -19,7 +29,10 @@ const CardTitle = styled.h1`
 
 const Linkage = styled.a`
   padding: 1em;
-  color: darkred;
+  color: white;
+  background-color: darkred;
+  border: 2px solid grey;
+  margin: 2em;
   &:hover {
     background-image: url(${hoverImage});
     border: 2px solid grey;
@@ -27,19 +40,29 @@ const Linkage = styled.a`
   }
 `;
 
+const Text = styled.p`
+  background-color: white;
+  padding: 1em;
+  border: 2px solid grey;
+`
+
 const Thumbnail = styled.img`
   max-height: 5em;
   min-height: 5em;
   margin: auto;
   padding: 1em;
-`;
+  &:hover{
+    animation: ${rotate360} 1s linear infinite;
+  }
+`
+
 class Card extends Component {
   render() {
     return (
       <Structure className="white">
         <CardTitle>{this.props.title}</CardTitle>
         <br />
-        {this.props.summary ? <p>{this.props.summary}</p> : null}
+        {this.props.summary ? <Text>{this.props.summary}</Text> : null}
 
         {this.props.images
           ? this.props.images.map(image => (
@@ -52,16 +75,13 @@ class Card extends Component {
         {this.props.project ? (
           <div>
             <Linkage href={this.props.project}>Access Project</Linkage>
-            <br />
-            <br />
           </div>
         ) : null}
-
+        <br />
+        <br />
         {this.props.code ? (
           <div>
             <Linkage href={this.props.code}>Access Code</Linkage>
-            <br />
-            <br />
           </div>
         ) : null}
         <br />
@@ -69,8 +89,6 @@ class Card extends Component {
         {this.props.img ? (
           <div>
             <img src={this.props.img} alt={this.props.img} />
-            <br />
-            <br />
           </div>
         ) : null}
         <br />

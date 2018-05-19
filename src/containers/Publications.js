@@ -26,7 +26,20 @@ const Wrapper = styled.div`
 
 const Linkage = styled.a`
   color: darkred;
+  &:hover{
+    color: grey;
+  }
 `
+
+const Background = styled.div`
+  background-color: white;
+  border: 2px solid grey;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 2em;
+  padding: 1em;
+`
+
 class Publications extends Component {
   render() {
     return (
@@ -42,17 +55,18 @@ class Publications extends Component {
                 <Wrapper className="white">
                   <SubTitle>DEV.TO</SubTitle>
                   <br />
+                  <Background>
                   <Linkage href="https://dev.to/daniel40392/leveling-up-from-create-react-app-to-express--some-neat-styling-libraries-130p">
                     Leveling Up: From Create-React-App to Express (& some neat
                     styling libraries)
                   </Linkage>
-                  <br />
-                  <br />
+
+                  <hr />
+
                   <Linkage href="https://dev.to/daniel40392/visualizing-fibonacci-for-the-music-lover-in-you-2609">
                     Visualizing Fibonacci: For the Music Lover in You!
                   </Linkage>
-                  <br />
-                  <br />
+                  </Background>
                 </Wrapper>
               </Box>
             </Flex>

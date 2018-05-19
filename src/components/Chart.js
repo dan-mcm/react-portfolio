@@ -2,13 +2,6 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { Cell, PieChart, Pie, Sector } from "recharts";
 
-const Title = styled.h3`
-  color: darkred;
-  border-bottom: 0.05em solid black;
-  margin-bottom: 1em;
-  font-size: 150%;
-`;
-
 const Wrapper = styled.div`
   margin: 0 auto;
 `;
@@ -89,7 +82,6 @@ class Chart extends Component {
   render() {
     return (
       <Wrapper>
-        <Title>Skill Snapshot</Title>
         <PieChart width={600} height={400}>
         <Pie
         	activeIndex={this.state.activeIndex}

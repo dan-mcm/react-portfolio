@@ -1,8 +1,18 @@
 import React, { Component } from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { Flex, Box } from "grid-styled";
 import me from "../images/otherimages/DanHat.jpg";
 import background from "../images/otherimages/ep_naturalblack.png";
+
+const rotate360 = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+`;
 
 const Image = styled.img`
   vertical-align: middle;
@@ -10,6 +20,9 @@ const Image = styled.img`
   width: 4em;
   border-radius: 200px;
   border: 2px solid grey;
+  &:hover{
+    animation: ${rotate360} 2s linear;
+  }
 `;
 
 const OutterWrapper = styled.div`

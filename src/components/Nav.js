@@ -6,9 +6,9 @@ import navImage from "../images/otherimages/ep_naturalwhite.png";
 import navImageBlack from "../images/otherimages/ep_naturalblack.png";
 
 const Wrapper = styled.div`
-background-image: url(${navImageBlack});
-border-top: 2px solid grey;
-border-bottom: 2px solid grey;
+  background-image: url(${navImageBlack});
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
 `;
 
 const InnerWrapper = styled.div`
@@ -27,13 +27,8 @@ const Linkage = styled(Link)`
   color: white;
   text-decoration: bold;
   padding: 1em;
-  margin-left: 1em;
-  margin-right: 1em;
-  &:hover {
-    text-decoration: none;
-    background-image: url(${navImage});
-    color: black;
-  }
+  width: 100%;
+  height: 100%;
   &:focus,
   &:visited,
   &:link,
@@ -43,13 +38,16 @@ const Linkage = styled(Link)`
 `;
 
 const Boxage = styled(Box)`
+  border: 2px solid transparent;
   &:hover{
     background-image: url(${navImage});
+    border: 2px solid grey;
     color: black;
-    Linkage{
+    ${Linkage}{
       color: black;
     }
   }
+
 `
 
 const NavBar = () => (

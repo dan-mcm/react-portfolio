@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { Flex, Box } from "grid-styled";
 
-import Chart from "./Chart";
-
 import diploma from "../images/homepage/diploma.png";
 import git from "../images/homepage/github.png";
 import mail from "../images/homepage/mail.png";
@@ -66,9 +64,8 @@ class Banner extends Component {
           <Box px={2} py={2} width={[1, 1/3]}>
             <Wrapper className="white">
               <SubTitle>Contact</SubTitle>
-              <Image src={mail}/>
+              <a href="mailto:daniel40392@gmail.com"><Image src={mail}/></a>
               <br /><br />
-              <a href="mailto:daniel40392@gmail.com">daniel40392@gmail.com</a>
             </Wrapper>
           </Box>
           <Box px={2} py={2} width={[1, 1/3]}>
@@ -88,14 +85,8 @@ class Banner extends Component {
           <Box px={2} py={2} width={[1, 1/3]}>
             <Wrapper className="white">
               <SubTitle>Github</SubTitle>
-              <Image src={git}/>
+              <a href="https://github.com/daniel40392"><Image src={git}/></a>
               <br /><br />
-              <a href="https://github.com/daniel40392">GitHub</a>
-            </Wrapper>
-          </Box>
-          <Box px={2} py={4} width={1}>
-            <Wrapper className="hidechart">
-              <Chart/>
             </Wrapper>
           </Box>
         </Flex>
