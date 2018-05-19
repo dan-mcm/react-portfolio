@@ -22,9 +22,10 @@ const Structure = styled.div`
   border: 2px solid grey;
 `;
 
-const CardTitle = styled.h1`
+const CardTitle = styled.h3`
   color: darkred;
   border-bottom: 0.1em solid black;
+  font-size: 200%;
 `;
 
 const Linkage = styled.a`
@@ -44,6 +45,7 @@ const Text = styled.p`
   background-color: white;
   padding: 1em;
   border: 2px solid grey;
+  font-size: large;
 `
 
 const Thumbnail = styled.img`

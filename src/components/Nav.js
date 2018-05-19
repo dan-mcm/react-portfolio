@@ -24,6 +24,7 @@ const Navigation = styled.div`
 `;
 
 const Linkage = styled(Link)`
+  font-size: large;
   color: white;
   text-decoration: bold;
   padding: 1em;

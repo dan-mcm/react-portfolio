@@ -29,7 +29,7 @@ const Title = styled.h1`
 
 const SubTitle = styled.h3`
   color: darkred;
-  border-bottom: 0.05em solid black;
+  border-bottom: 2px solid black;
   margin-bottom: 1em;
   font-size: 150%;
 `;
@@ -38,6 +38,7 @@ const List = styled.ul`
   list-style-type: none;
   color: black;
   padding: 0;
+  font-size: large;
 `;
 
 const Image = styled.img`

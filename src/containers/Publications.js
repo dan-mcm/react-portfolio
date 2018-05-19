@@ -12,10 +12,12 @@ const Title = styled.h3`
   margin-bottom: 25px;
 `;
 
-const SubTitle = styled.h1`
+const SubTitle = styled.h3`
   color: darkred;
   border-bottom: 0.1em solid black;
-`;
+  margin 1em;
+  font-size: 200%;
+`
 
 const Wrapper = styled.div`
   width: 80%;
@@ -26,6 +28,7 @@ const Wrapper = styled.div`
 
 const Linkage = styled.a`
   color: darkred;
+  font-size: large;
   &:hover{
     color: grey;
   }
