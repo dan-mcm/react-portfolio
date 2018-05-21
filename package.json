@@ -15,8 +15,10 @@
     "styled-components": "^2.4.0"
   },
   "devDependencies": {
+    "eslint": "^4.19.1",
     "gh-pages": "^1.1.0",
-    "react-scripts": "1.0.10"
+    "react-scripts": "1.0.10",
+    "xo": "^0.21.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -25,6 +27,10 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
+  },
+  "xo":{
+    "prettier": true,
+    "semicolon": true
   },
   "homepage": "http://daniel40392.github.io/react-portfolio"
 }
