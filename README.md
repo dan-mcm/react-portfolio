@@ -2,6 +2,7 @@
 
 [![style: styled-components](https://img.shields.io/badge/style-%F0%9F%92%85%20styled--components-orange.svg?colorB=daa357&colorA=db748e)](https://github.com/styled-components/styled-components)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
 
 ## Summary
 
@@ -23,7 +24,7 @@ Tests:
 - Jest (Coming Soon)
 
 Continuously Integrated:
-- XO (Coming Soon)
+- Pre-Commit: XO
 - Circle CI (Coming Soon)
 
 

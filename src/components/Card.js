@@ -46,17 +46,17 @@ const Text = styled.p`
   padding: 1em;
   border: 2px solid grey;
   font-size: large;
-`
+`;
 
 const Thumbnail = styled.img`
   max-height: 5em;
   min-height: 5em;
   margin: auto;
   padding: 1em;
-  &:hover{
+  &:hover {
     animation: ${rotate360} 1s linear infinite;
   }
-`
+`;
 
 class Card extends Component {
   render() {
