@@ -40,6 +40,7 @@
     "run": ["lint-staged"]
   },
   "xo": {
+    "env": ["browser", "node"],
     "extends": ["xo-react"],
     "plugins": ["unicorn"],
     "space": 2,
