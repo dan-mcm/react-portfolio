@@ -6,8 +6,8 @@ import li from "../images/socialicons/li.png";
 
 
 const Image = styled.img`
-  min-height: 3em;
-  min-width: 3em;
+  min-height: 2em;
+  min-width: 2em;
   filter: grayscale(50%);
 `;
 
