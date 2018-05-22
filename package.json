@@ -33,33 +33,20 @@
     "lint-staged": "lint-staged",
     "lint": "xo"
   },
-  "eslintConfig": {
-    "extends": [
-      "prettier/react",
-      "plugin:unicorn"
-    ],
-    "rules":{
-      "unicorn/filename-case": ["error", {"case": "pascalCase"}]
-    }
-  },
   "lint-staged": {
-    "**/*.js": [
-      "prettier",
-      "git add",
-      "xo"
-    ]
+    "**/*.js": ["xo --prettier", "git add"]
   },
   "precommit": {
-    "run": [
-      "lint-staged"
-    ]
+    "run": ["lint-staged"]
   },
   "xo": {
-    "extends": [
-      "prettier/react"
-    ],
+    "extends": ["xo-react"],
+    "plugins": ["unicorn"],
     "space": 2,
-    "prettier": true
+    "prettier": true,
+    "rules": {
+      "unicorn/filename-case": ["warning", { "case": "pascalCase" }]
+    }
   },
   "prettier": {
     "bracketSpacing": true,
