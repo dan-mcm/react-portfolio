@@ -31,11 +31,12 @@ const CardTitle = styled.h3`
 const Linkage = styled.a`
   padding: 1em;
   color: white;
-  background-color: darkred;
+  background-image: url(${hoverImage});
   border: 2px solid grey;
   margin: 2em;
   &:hover {
-    background-image: url(${hoverImage});
+    background-color: darkred;
+    background-image: none;
     border: 2px solid grey;
     color: white;
   }
