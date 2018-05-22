@@ -99,15 +99,15 @@ class Chart extends Component {
       activeIndex: 0
     };
     this.onPieEnter = this.onPieEnter.bind(this);
-  }
+  };
 
   // broken since adding lint///
   //
-  // onPieEnter = (data, index) => {
-  //   this.setState({
-  //     activeIndex: index
-  //   });
-  // };
+  onPieEnter(data, index){
+    this.setState({
+      activeIndex: index,
+    });
+  }
 
   render() {
     return (

@@ -1,7 +1,9 @@
 import React, { Component } from "react";
+import styled from "styled-components";
+
 import gh from "../images/socialicons/gh.png";
 import li from "../images/socialicons/li.png";
-import styled from "styled-components";
+
 
 const Image = styled.img`
   min-height: 3em;

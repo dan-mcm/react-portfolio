@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import Banner from "../components/Banner";
-// import ChartComponent from "../components/ChartComponent";
+import ChartComponent from "../components/ChartComponent";
 import SkillDisplay from "../components/SkillDisplay";
 
 /* Image Imports */
@@ -49,9 +49,7 @@ class Home extends Component {
         <Banner />
 
         <div className="hidechart">
-          {/* chart broke after implementing linting...
           <ChartComponent />
-          */}
         </div>
 
         <SkillDisplay
