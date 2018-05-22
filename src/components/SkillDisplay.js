@@ -27,6 +27,7 @@ const Title = styled.h3`
 `;
 
 const Card = styled.div`
+  margin: auto;
   background-color:white;
   color: black;
   max-width: 17em;
@@ -36,6 +37,10 @@ const Card = styled.div`
   h3{
     border-bottom: 1px solid black;
   }
+`
+
+const Boxage = styled(Box)`
+  margin: auto;
 `
 
 class SkillDisplay extends Component {
@@ -48,7 +53,7 @@ class SkillDisplay extends Component {
           </Box>
           {this.props.items.map(item => {
             return (
-              <Box px={2} py={1} width={[1, 1 / 2, 1 / 4]}>
+              <Boxage px={2} py={1} width={[1, 1 / 2, 1 / 4]}>
               <div className="flip-container">
                 <div className="flipper">
                   <div className="front">
@@ -61,7 +66,7 @@ class SkillDisplay extends Component {
                 </div>
               </div>
 
-              </Box>
+              </Boxage>
             );
           })}
         </Flex>
