@@ -5,6 +5,7 @@ import { Flex, Box } from "grid-styled";
 const Wrapper = styled.div`
   margin-top: 2em;
   margin-bottom: 2em;
+  padding-bottom: 1em;
   border: 2px solid grey;
 `;
 
@@ -34,6 +35,7 @@ const Card = styled.div`
   max-height: 17em;
   min-width: 17em;
   min-height: 17em;
+  border: 2px solid grey;
   h3{
     border-bottom: 1px solid black;
   }

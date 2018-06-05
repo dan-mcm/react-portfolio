@@ -36,6 +36,10 @@ const Thumbnail = styled.img`
   max-width: 200px;
   max-height: 200px;
   padding: 3em;
+  -webkit-filter: grayscale(0.5);
+  &:hover{
+    -webkit-filter: grayscale(0);
+  }
 `
 
 class Contact extends Component {

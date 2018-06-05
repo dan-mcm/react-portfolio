@@ -33,10 +33,10 @@ const Wrapper = styled.div`
 
 
 const Thumbnail = styled.img`
-  max-height: 250px;
-  max-width: 250px;
-  border-radius: 25px;
+  max-height: 300px;
+  max-width: 300px;
   margin: 1em;
+  border: 2px solid grey;
 `
 
 const Section = styled.div`
@@ -51,7 +51,6 @@ const Intro = styled.div`
   color: black;
   background-color: white;
   border: 2px solid grey;
-  border-radius: 25px;
 `
 
 const Subtitle = styled.h3`
@@ -84,6 +83,9 @@ const CaroImage = styled.img`
   max-height: 300px;
 `
 
+const Spacer = styled.div`
+  padding: 2em;
+`;
 class About extends Component {
   render() {
     return (
@@ -103,6 +105,22 @@ class About extends Component {
               </Box>
               <Box width={[1, 1/3]}>
                 <Thumbnail src={dan3}></Thumbnail>
+              </Box>
+              <Box width={1}>
+                <div className="hidechart">
+                  <Spacer>
+                    <Carousel autoplay>
+                       <div><h1>Some Hobbies:</h1></div>
+                       <div><CaroImage src={piano}></CaroImage></div>
+                       <div><CaroImage src={gb}></CaroImage></div>
+                       <div><CaroImage src={mha}></CaroImage></div>
+                       <div><CaroImage src={twitch}></CaroImage></div>
+                       <div><CaroImage src={netflix}></CaroImage></div>
+                       <div><CaroImage src={steam}></CaroImage></div>
+                       <div><CaroImage src={swit}></CaroImage></div>
+                     </Carousel>
+                   </Spacer>
+                 </div>
               </Box>
               <Box width={1}>
                 <Section>
@@ -130,20 +148,6 @@ class About extends Component {
                     <Text>In short: <Red>I'm a humble software engineer, musician and educator</Red></Text>
                   </Intro>
                 </Section>
-              </Box>
-              <Box width={1}>
-                <div className="hidechart">
-                  <Carousel autoplay>
-                     <div><h1>Some Hobbies:</h1></div>
-                     <div><CaroImage src={piano}></CaroImage></div>
-                     <div><CaroImage src={gb}></CaroImage></div>
-                     <div><CaroImage src={mha}></CaroImage></div>
-                     <div><CaroImage src={twitch}></CaroImage></div>
-                     <div><CaroImage src={netflix}></CaroImage></div>
-                     <div><CaroImage src={steam}></CaroImage></div>
-                     <div><CaroImage src={swit}></CaroImage></div>
-                   </Carousel>
-                 </div>
               </Box>
             </Flex>
           </div>

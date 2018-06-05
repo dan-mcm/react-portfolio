@@ -19,6 +19,7 @@
 body {
   background-image: url("./images/otherimages/swirl_pattern.png");
   overflow-x: hidden;
+  height: 100vh;
 }
 
 h1 {
