@@ -27,3 +27,5 @@ Currently run the following to update the gh-pages branch:
 ```bash
 npm run deploy
 ```
+
+An 'aws-deploy' branch is also available if you wish to run a local build of the repo and upload it to AWS s3 for [static website hosting](https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html).
