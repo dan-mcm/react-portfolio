@@ -27,3 +27,5 @@ Currently run the following to update the gh-pages branch:
 ```bash
 npm run deploy
 ```
+
+This branch contains a modified version of the files to allow for easy deployment and modification directly onto AWS static site current hosted at [Developyr](http://developyr.com/).
