@@ -59,9 +59,27 @@ class Publications extends Component {
                   <SubTitle>DEV.TO</SubTitle>
                   <br />
                   <Background>
+
+                  <Linkage href="https://dev.to/daniel40392/a-year-in-professional-software-development-1l7a">
+                    A Year in Professional Software Development
+                  </Linkage>
+
+                  <hr />
+
+                  <Linkage href="https://dev.to/daniel40392/the-inspiration-api-a-project-built-with-scala--play-framework-195d">
+                    The Inspiration API: A project built with Scala & Play Framework
+                  </Linkage>
+
+                  <hr />
+
+                  <Linkage href="https://dev.to/daniel40392/building-a-portfolio-the-painful-way-3im8">
+                    Building A Portfolio: The Painful Way
+                  </Linkage>
+
+                  <hr />
+
                   <Linkage href="https://dev.to/daniel40392/leveling-up-from-create-react-app-to-express--some-neat-styling-libraries-130p">
-                    Leveling Up: From Create-React-App to Express (& some neat
-                    styling libraries)
+                    Leveling Up: From Create-React-App to Express (& some neat styling libraries)
                   </Linkage>
 
                   <hr />
@@ -69,6 +87,8 @@ class Publications extends Component {
                   <Linkage href="https://dev.to/daniel40392/visualizing-fibonacci-for-the-music-lover-in-you-2609">
                     Visualizing Fibonacci: For the Music Lover in You!
                   </Linkage>
+
+
                   </Background>
                 </Wrapper>
               </Box>
