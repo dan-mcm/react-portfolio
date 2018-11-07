@@ -20,6 +20,34 @@ npm install
 npm start
 ```
 
+## Using Docker
+
+An additional Dockerfile has been added to the repo. If you wish to run the application via Docker:
+
+```bash
+# build docker image
+docker build . # or you can run the command
+
+# run docker container and portforward port 3000
+docker run -ti -p 3000:3000 <docker-image-id>
+
+# publish docker image to docker hub
+docker push <docker-repo>
+```
+
+A handy makefile has been setup for ease of use as well
+
+```bash
+# this will default to 'build' command
+make
+
+# this will push the image to docker hub
+make push
+
+# this will both build and publish for expediency
+make deploy
+```
+
 ## Deployment:
 The package.json deploy script is setup for gh-pages deployment. Plans are in place to allow auto publication of updates on merge to master via Circle CI.
 Currently run the following to update the gh-pages branch:

@@ -34,22 +34,42 @@
     "lint": "xo --prettier"
   },
   "eslintConfig": {
-    "extends": ["xo", "xo-react"]
+    "extends": [
+      "xo",
+      "xo-react"
+    ]
   },
   "lint-staged": {
-    "**/*.js": ["xo --prettier", "git add"]
+    "**/*.js": [
+      "xo --prettier",
+      "git add"
+    ]
   },
   "precommit": {
-    "run": ["lint-staged"]
+    "run": [
+      "lint-staged"
+    ]
   },
   "xo": {
-    "env": ["browser", "node"],
-    "extends": ["xo-react"],
-    "plugins": ["unicorn"],
+    "env": [
+      "browser",
+      "node"
+    ],
+    "extends": [
+      "xo-react"
+    ],
+    "plugins": [
+      "unicorn"
+    ],
     "space": 2,
     "prettier": true,
     "rules": {
-      "unicorn/filename-case": ["warning", { "case": "pascalCase" }]
+      "unicorn/filename-case": [
+        "warning",
+        {
+          "case": "pascalCase"
+        }
+      ]
     }
   },
   "prettier": {
